@@ -1,17 +1,15 @@
 import java.util.Scanner;
 public class Main
 {
+    private static Scanner read;
 	public static void main(String[] args) 
-	{
-	    int chisl = 4;
-		System.out.println("Введите 4 целых числа");
-		for(int i; i<chisl; i++)
-		{
-		    Scanner input = new Scanner(System.in);
-            int a = nextInt();
-            int b = nextInt();
-            int c = nextInt();
-            int d = nextInt();
+	    {   
+	        System.out.println("Введите 4 целых числа");
+	        Scanner scunner = new Scanner(System.in);
+	        int a = scunner.nextInt();
+            int b = scunner.nextInt();
+            int c = scunner.nextInt();
+            int d = scunner.nextInt();
             if(a==b & b==c & c ==d)
             {
                 System.out.println("Все четыре числа равны");
@@ -20,6 +18,9 @@ public class Main
             {
                 System.out.println("Числа не равны");
             }
-		}
-	}
+	    }
 }
+		
+	
+
+    
