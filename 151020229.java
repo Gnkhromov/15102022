@@ -1,14 +1,14 @@
 import java.util.Scanner;
 public class Main
 {
+    private static Scanner read;
 	public static void main(String[] args) 
-	{
-		System.out.println("Введите ваш рост");
-		Scanner input = new Scanner(System.in);
-		float rost = input.nextFloat();
-		System.out.println("Введите ваш вес");
-		float ves = input.nextFloat();
-		float imt = (ves/(rost*rost))
-		System.out.println("Ваш имт:" + imt);
-	}
+	    {   
+	        System.out.println("Введите ваш рост");
+	        Scanner scunner = new Scanner(System.in);
+	        float rost = scunner.nextFloat();
+	        System.out.println("Введите ваш вес");
+            float ves = scunner.nextFloat();
+            System.out.println("Ваш имт:" + (ves/(rost*rost*0.0001)));
+	    }   
 }
